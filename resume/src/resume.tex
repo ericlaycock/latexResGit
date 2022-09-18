@@ -1,0 +1,121 @@
+% SETTINGS ###########################################################################
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=0.7cm,right=9.5cm,marginparwidth=8.3cm,marginparsep=0.5cm,top=0.9cm,bottom=0.5cm}
+
+% Change the font if you want to, depending on whether
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+}
+
+% Change the colours if you want to
+\definecolor{Black}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\colorlet{heading}{Black}
+\colorlet{accent}{Black}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{SlateGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+% DOCUMENT ###########################################################################
+\begin{document}
+\name{Eric Laycock}
+\tagline{Searching for: 8 Month Coop Fall 2023}
+\photo{1.5cm}{ubc_logo}
+\personalinfo{%
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{mailto:redemit@mail.ubc.ca}{redemit@mail.ubc.ca}
+  \github{https://github.com/ericlaycock}{github.com/ericlaycock}
+  \homepage{https://www.pineapplespanish.com/team}{pineapplespanish.com/team}\\[5pt]
+  % \mailaddress{Address, Street, 00000 County}
+  \location{Vancouver, BC\kern 1pc}
+  \phone{\href{tel:3435720359}{343 572 0359\kern 1em}}
+  % \twitter{@marissamayer}
+  \linkedin{https://www.linkedin.com/in/ericlaycock/}{linkedin.com/in/ericlaycock}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+
+% EXPERIENCE #########################################################################
+\cvsection[sidebar]{Experience}
+\cvevent{Pineapple Spanish - Founder}{Canada, Colombia}{August 2019 -- Ongoing}{Ottawa, CA}
+\begin{itemize}
+\item Built an online language school - currently operating with 3 full-time employees and 50 weekly students. 
+\item Responsibilities included marketing (research and funnel automation), quality assurance, sales, hiring, managing team and scaling operations.
+\item  Developed a novel curriculum for more easily becoming fluent in a language through using novel memorization strategies, as integrated with regular native speaker contact and empirical recording of student results over time to optimize for speed.
+\end{itemize}
+\divider\small
+
+\cvevent{Science Writer & Researcher}{Entheotech}{December 2021 -- Ongoing}{Kelowna, BC}
+\begin{itemize}
+\item Responsible for overseeing and assisting in development of team projects
+\item Writing and editing neuro/biomedical communication for both medical and public use, communicating internally and externally with company stakeholders
+\item Conducting time-series data analyses of clinical trial data, integrating medical, psychological and experimental data.
+\end{itemize}
+\divider\small
+
+\cvevent{Neuroscience Researcher}{University of British Columbia - Labs of Bhv. Neuroendocrinology, Cognitive Neuroscience and Motivated Cognition}{2014 -- 2018}{Vancouver, BC}
+\begin{itemize}
+\item Worked in behavioural neuroendocrinology, cognitive neuroscience and psychophysics labs
+\item Responsible for conducting EEG (electroencephalography) experiments, neuroscience literature review,
+\item Conducted MATLAB analyses of complex EEG, biosensor data using different clustering models; constructed a Gaussian filter for signal noise reduction in Motivated Cognition Lab.
+\end{itemize} 
+\divider\small
+
+
+% PROJECTS ###########################################################################
+\cvsection{Projects}
+\cvevent{\href{https://github.com/ericlaycock/ssnap}{SSNAP Signal Noise Reduction Filter [GitHub]}}{}{October 2017}{}
+\begin{itemize}
+  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
+  \item Developed a novel Gaussian filter to formalize a signal energy density function using convultion and fast-fourier transforms.
+  \item Designed psychophysics stimuli to be presented to experimental subjects.
+  \item \underline{\textit{Utilized:}} MATLAB, R, Statistics, Mathematics, Signal Processing
+\end{itemize}
+\divider\small
+
+\cvevent{\href{https://github.com/ericlaycock/ericlaycock.github.io}{Pineapple [GitHub]}}{}{July 2022 -- ongoing}{}
+\begin{itemize}
+  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
+  \item Constructed a Firebase + JS web app to act as a membership for Pineapple Spanish students, allowing secure login/logout.
+  \item Created over 300 hours of online content for different aspects of language acquisition, including memorization programs, online drills and video content.
+  \item \underline{\textit{Utilized:}} Javascript, HTML, Firebase, Firestore, CSS, SCSS, Less
+\end{itemize}
+\divider\small
+
+\cvevent{\href{https://github.com/great-goblin/marketforce_code}{MarketForce.ca LinkedIn Scraper[GitHub]}}{}{October 2019}{}
+\begin{itemize}
+  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
+  \item Created a marketing funnel automation for a digital marketing agency.
+  \item Applied systems-design, HTML and XML design principles to build a robust automated LinkedIn content scraper and messaging platform to achieve marketing KPIs.
+  \item \underline{\textit{Utilized:}} Python, HTML, XML, Systems Design, Webscraping
+\end{itemize}
+
+
+\clearpage
+\nocite{*}
+\end{document}
